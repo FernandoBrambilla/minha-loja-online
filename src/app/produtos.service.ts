@@ -8,12 +8,12 @@ export class ProdutosService {
   produtos: IProduto[] = produtos;
   constructor() { }
 
-  geAll(){
+  getAll(){
     return this.produtos;
   }
 
-  getOne(ProdutoId: number){
-    return this.produtos.find(produto => produto.id = ProdutoId)
+  getOne(produtoId: number){
+    return this.produtos.find(produto => produto.id == produtoId);
   }
-  
+
 }

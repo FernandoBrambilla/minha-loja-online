@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CarrinhoService } from 'src/app/carrinho.service';
 import { NotificacaoService } from 'src/app/notificacao.service';
@@ -10,8 +10,9 @@ import { ProdutosService } from 'src/app/produtos.service';
   templateUrl: './detalhes-produto.component.html',
   styleUrls: ['./detalhes-produto.component.css']
 })
-export class DetalhesProdutoComponent {
+export class DetalhesProdutoComponent implements OnInit{
   produto: IProduto | undefined;
+  
   quantidade =1;
   
   constructor(
@@ -24,8 +25,8 @@ export class DetalhesProdutoComponent {
 
   ngOnInit(): void{
     const routeParams = this.route.snapshot.paramMap;
-    const produtoId = Number(routeParams.get("id"));
-    this.produto = this.produtosService.getOne(produtoId);
+    const produtoId =Number(routeParams.get("id"));
+    this.produto =this.produtosService.getOne(produtoId);
   
   }
 
