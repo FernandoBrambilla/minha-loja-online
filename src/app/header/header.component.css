@@ -9,8 +9,8 @@
 
 .main-header__title {    
     font-size: 40px;
-    letter-spacing: -1.5px;    
-}
+    letter-spacing: -1.5px; 
+}   
 
 .main-header__title--blue {
     color: var(--dark-blue);
