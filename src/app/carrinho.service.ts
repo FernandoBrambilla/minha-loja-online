@@ -10,7 +10,7 @@ export class CarrinhoService {
   constructor() { }
 
   obterCarrinho(){
-    this.itens =JSON.parse(localStorage.getItem("carrinho")|| "");
+    this.itens =JSON.parse(localStorage.getItem("carrinho")|| "[]");
     return this.itens;
   }
 
@@ -19,8 +19,14 @@ export class CarrinhoService {
     localStorage.setItem("carrinho", JSON.stringify(this.itens));
   }
 
+  removerItemCarrinho( produtoId: number){
+    this.itens = this.itens.filter(iten => iten.id !== produtoId);
+    localStorage.setItem("carrinho", JSON.stringify(this.itens));
+
+  }
+
   limparCarrinho(){
     this.itens = [];
-    localStorage.clear;
+    localStorage.clear();
   }
 }

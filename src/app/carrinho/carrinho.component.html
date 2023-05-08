@@ -1,17 +1,37 @@
 <h2 class="cart__title"></h2>
-<div>
+<div *ngIf="itensCarrinho.length>0, else carrinhoVazio">
     <ul>
         <li *ngFor="let itemCarrinho of itensCarrinho">
             <img [src]="itemCarrinho.imagem"/>
             <p>{{itemCarrinho.descricao}}</p>
-            <p>{{itemCarrinho.preco}}</p>
+            <p>Valor unitário {{itemCarrinho.preco | currency: "BRL"}} </p>
             <label>
                 Quantidade:
-                <input type="number"[(ngModel)]="itemCarrinho.quantidade">
+                <input type="number"[(ngModel)]="itemCarrinho.quantidade" (change)="calcularTotal()">
             </label>
-            <button class="remove-button"><i class="fa-solid fa-trash"></i></button>
+            <p>Total: {{(itemCarrinho.preco)*(itemCarrinho.quantidade)| currency: "BRL"}}</p>
+            <button class="remove-button" (click)="removerProdutoCarrinho(itemCarrinho.id)"><i class="fa-solid fa-trash"></i></button>
         </li>
     </ul>
-    <h2 class="cart__total"> Total: R$ 1.300,00</h2>
-    <button class="buy-button">Comprar</button>
+    <div class="cart__total">
+        <div>
+            <h2> Total {{totalCarrinho | currency:"BRL"}}</h2>
+        </div>
+        <div>
+            <button (click)="comprar()">Comprar</button>
+        </div>
+    
+    
+    </div>
 </div>
+<ng-template #carrinhoVazio >
+
+    <section class="empty__cart">
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <p>Carrinho Vazio!</p>
+        <button a routerLink="/produtos" class="button">Continuar Comprando</button>
+    </section>
+  
+    
+
+    </ng-template>

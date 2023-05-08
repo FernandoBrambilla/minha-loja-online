@@ -62,6 +62,7 @@
     color: white;
     font-size: 20px;
     padding: 6px 12px;
+    border-radius: 2px;
 }
 
 .product-item__buy-button:hover {

@@ -32,22 +32,30 @@ img {
 }
 
 .remove-button:hover {
-    filter: brightness(0.9);
+    filter: brightness(1.4);
 }
 
-.cart-total {
+.cart__total {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 100px;
+    justify-content: space-between;
     font-size: 24px;
-    color: var(--gray);
-    font-weight: 700;
     padding: 8px 0;
+    text-align: end;
+    
+    
+    
 }
-
-input {
-    width: 30px;
-    text-align: center;
+.cart__total h2{
+    margin-right: 50px;
+    font-size: 25px;
+    
+    
 }
-
-.buy-button {
+.cart__total button {
     background-color: var(--blue);
     border: none;
     color: white;
@@ -55,8 +63,49 @@ input {
     font-size: 22px;
     margin-bottom: 10px;
     transition: .3s all;
+    border-radius: 2px;
+    margin-right: 50px;
+    width: 200px;
+    
+}
+
+
+
+input {
+    width: 30px;
+    text-align: center;
 }
 
 .buy-button:hover {
-    filter: brightness(0.9);
+    filter: brightness(1.4);
+
+}
+
+.empty__cart{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 40px;
+   
+}
+.empty__cart i{
+    font-size: 100px;
+    margin-bottom: 30px;
+    
+}
+.button{
+        background-color: var(--blue);
+        border: none;
+        color: white;
+        font-size: 20px;
+        padding: 6px 12px;
+        margin-top: 30px;
+        border-radius: 2px;
+        box-shadow:rgb(239, 235, 235) 2px 2px 5px 2px;
+
+    }
+.button:hover{
+    filter: brightness(1.4);
 }

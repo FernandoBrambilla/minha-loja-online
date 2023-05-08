@@ -13,21 +13,19 @@
 }   
 
 .main-header__title--blue {
-    color: var(--dark-blue);
-    
+    color: var(--dark-blue); 
     font-size:40px;
 }
 
 .main-header__title--orange {
-    color: var(--orange);
-    
+    color: var(--orange); 
     font-size:50px;
 }
 
 .main-header__menu ul {
     display: flex;
     justify-content: flex-end;
- 
+    text-decoration: none;
     
     
 }
@@ -37,7 +35,7 @@
     color: var(--dark-blue);
     font-weight: 400;
     font-size: 18px;
-
+    text-decoration: none;
     transition: all .3s ease-in-out;
     
 }
