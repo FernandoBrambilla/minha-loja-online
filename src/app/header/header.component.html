@@ -10,21 +10,15 @@
                 <li><a routerLink="carrinho"> Meu Carrinho 
                         <span class="badge-carrinho">{{carrinhoService.obterCarrinho().length}}</span>
                     </a>
-                </li>
-                    
+                </li>    
                 <li><a><i class="fa-solid fa-user"></i> Minha Conta</a></li>
                 <li><a routerLink="contato">Contato</a></li>
                 <li><a href="https://www.facebook.com/brambillainformatica"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/Brambilla"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/brambillainformatica/"><i class="fa-brands fa-instagram"></i></a></li>
-
-                   
-                    
+                <li><a href="https://www.instagram.com/brambillainformatica/"><i class="fa-brands fa-instagram"></i></a></li>      
                 </ul>
             </nav>
+            
         </div>
-    <form class="search-form">
-        <input type="text">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+   <app-barra-pesquisa></app-barra-pesquisa>
 </header>
