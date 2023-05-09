@@ -26,3 +26,10 @@
     font-size: 22px;
     border-radius: 2px;
 }
+
+
+@media (max-width: 1366px){
+    .search-form input{
+      width: 200px;
+    }
+}
