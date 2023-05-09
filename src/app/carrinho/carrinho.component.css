@@ -1,8 +1,12 @@
+
+
 .cart-title {
     font-size: 44px;
     color: var(--gray);
     font-weight: 700;
     padding: 8px 0;
+    
+
 }
 
 li {
@@ -14,7 +18,10 @@ li {
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    font-size: 16px;
 }
+
+
 
 img {
     width: 100px;
@@ -34,7 +41,16 @@ img {
 .remove-button:hover {
     filter: brightness(1.4);
 }
+i{
+    font-size: 20px;
+    color: rgb(28, 204, 28);
+    padding-left: 10px;
+}
 
+li input { 
+    width: 50px;
+    height: 20px;
+}
 .cart__total {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 8px;

@@ -8,6 +8,7 @@
             <label>
                 Quantidade:
                 <input type="number"[(ngModel)]="itemCarrinho.quantidade" (change)="calcularTotal()">
+                <a><i class="fa-solid fa-arrows-rotate"></i></a>
             </label>
             <p>Total: {{(itemCarrinho.preco)*(itemCarrinho.quantidade)| currency: "BRL"}}</p>
             <button class="remove-button" (click)="removerProdutoCarrinho(itemCarrinho.id)"><i class="fa-solid fa-trash"></i></button>
