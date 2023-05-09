@@ -41,7 +41,7 @@ img {
 .remove-button:hover {
     filter: brightness(1.4);
 }
-i{
+.button__reflesh{
     font-size: 20px;
     color: rgb(28, 204, 28);
     padding-left: 10px;
