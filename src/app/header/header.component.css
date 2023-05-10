@@ -59,7 +59,7 @@
     color: white;
 }
 
-@media (max-width: 1366px){
+@media (max-width: 1400px){
     .main-header__title--blue{
         font-size: 35px;
     }
