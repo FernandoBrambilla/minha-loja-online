@@ -14,7 +14,7 @@ export interface IProdutoCarrinho extends IProduto{
 }
 
 export const produtos: IProduto[]= [
-    { id: 1, descricao: "Mouse Logitech M90 Usb Preto", preco: 65.50, descricaoPreco: "À vista no PIX", imagem: "./assets/mouse-logitech-m90-usb-preto.jpeg", quantidadeEstoque:3},
+    { id: 1, descricao: "Mouse Logitech M90 Usb Preto", preco: 65.00, descricaoPreco: "À vista no PIX", imagem: "./assets/mouse-logitech-m90-usb-preto.jpeg", quantidadeEstoque:3},
     { id: 2, descricao: "Monitor muito bom", preco: 1200.50, descricaoPreco: "À vista no PIX", imagem: "./assets/monitor-1.jpg", quantidadeEstoque:10},
     { id: 3, descricao: "Teclado excelente", preco: 749.99, descricaoPreco: "À vista no PIX", imagem: "./assets/teclado-1.jpg", quantidadeEstoque:10 },
     { id: 4, descricao: "Fone para quem joga FPS", preco: 599.99, descricaoPreco: "À vista no PIX", imagem: "./assets/fone-de-ouvido-2.jpg" , quantidadeEstoque:10},
